@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maracá | formulário de apresentação</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <h1 id="title">Maracá</h1>
+    <p id="description">Arquitetura & Design</p>
+    <div id="corpo">
+    <form id="survey-form">
+    <div>
+        <p id="subtitulo">Cadastro:</p>
+        <label for="name" id="name-label">Nome:
+        <input type="text" id="name" placeholder="Digite seu nome" required> </br>
+        </label>
+
+        <label for="email" id="email-label">E-mail:
+        <input type="email" id="email" placeholder="Digite seu e-mail" required></br>
+        </label>
+
+        <label for="number" id="number-label" >Telefone
+        <input type="tel" id="number" required pattern="[0-9]" placeholder="Digite seu telefone" min=8 max=12></br>
+        </label>
+    </div>
+    <div>
+        <label for="conhecer" id="subtitulo">Como você conheceu a gente?</label></br>
+        <select id="conhecer">
+            <option value="linkedin">LinkedIn</option>
+            <option value="instagram">Instagram</option>
+            <option value="facebook">Facebook</option>
+            <option value="outro">Outros</option>
+        </select></br>
+    </div>
+    <div>
+        <label for="escolha" id="subtitulo">Escolha seu tipo de projeto:</label></br>
+        <select id="dropdown">
+            <option value="residencial">Residencial</option>
+            <option value="comercial">Comercial</option>
+            <option value="religioso">Religioso</option>
+            <option value="saúde">Hospitalar/Veterinário</option>
+            <option value="outro">Outros</option>
+        </select></br>
+    </div>
+    <div>
+        <p id="subtitulo">Diz pra gente do que se trata o projeto</p>
+        <input type="radio" name="tipo" id="reforma" value = "reforma">
+        <label for = "reforma">Reforma Arquitetônica</label></br>
+
+        <input type="radio" name="tipo" id="construçãozero" value = "construçãozero">
+        <label for = "construçãozero">Construção do Zero</label></br>
+
+        <input type="radio" name="tipo" id="designdeinteriores" value = "designdeinteriores">
+        <label for = "designdeinteriores">Design de Interiores</label></br>
+    </div>
+    <div>
+            <p id="subtitulo">O que você gostaria de ver no seu projeto?</p>
+            <input type="checkbox" value = "marcenaria" id="marcenaria" name="marcenaria">
+            <label for ="marcenaria">Marcenaria sob medida</label></br>
+
+            <input type="checkbox" value = "espacosintegrados" id="espacosintegrados" name="espacosintegrados">
+            <label for ="espacosintegrados">Espaços amplos e integrados</label></br>
+
+            <input type="checkbox" value = "cores" id="cores" name="cores">
+            <label for ="cores">Cores!</label></br>
+
+            <input type="checkbox" value = "tonsdemadeira" id="tonsdemadeira" name="tonsdemadeira">
+            <label for ="tonsdemadeira">Tons de Madeira</label></br>
+
+            <input type="checkbox" value = "minimalista" id="minimalista" name="minimalista">
+            <label for ="minimalista">Minimalismo</label></br>
+
+    </div>
+
+    <div>
+            <textarea id="comentarios" name="comentarios" placeholder="Fale aqui mais alguns pontos que você considere importante sobre o seu projeto."></textarea>
+    </div>
+    <div id="button">
+        <button type="submit" id="submit" class="submit">Enviar Dados!</button>
+    </div>
+    </form>
+    </div>
+</body>
+</html>
